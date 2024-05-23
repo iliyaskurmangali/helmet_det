@@ -4,8 +4,7 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load the YOLO model
-model_url = "https://github.com/iliyaskurmangali/helmet_det/blob/main/yolo_v8_25.pt"
-model = YOLO(model_url)
+model = YOLO("yolo_v8_25.pt")  # Path to the pre-trained YOLOv8 )
 
 
 # Set up the Streamlit app
