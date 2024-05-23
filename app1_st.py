@@ -4,7 +4,9 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load the YOLO model
-model = YOLO("yolo_v8_25.pt")  # Path to the pre-trained YOLOv5 nano model
+model_url = "https://github.com/iliyaskurmangali/helmet_det/blob/main/yolo_v8_25.pt"
+model = YOLO(model_url)
+
 
 # Set up the Streamlit app
 st.title("Real-Time Object Detection with YOLOv8")
