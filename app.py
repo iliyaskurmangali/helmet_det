@@ -16,7 +16,6 @@ model = YOLO("yolo_v8_25.pt")  # Path to the pre-trained YOLOv5 nano model
 cap = None
 
 # Slack webhook URL
-SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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'
 
 def send_slack_notification(message):
     payload = {'text': message}
